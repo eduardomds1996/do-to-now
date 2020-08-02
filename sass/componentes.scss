@@ -1,107 +1,227 @@
-@import './paleta-cores.scss';
+@import "./paleta-cores.scss";
 
-.btn-style-1{
-    color: #fff;
-    background-color: $primaria;
-    border-radius: 5px;
-    transition: 0.5ms;
-    font-weight: 300;
-    font-size: 20px;
-    text-transform: capitalize;
-    width: 230px;
-    height: 40px;
-    min-height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    &:hover{
-        opacity: 0.9;
-        transition: 0.5ms;
-        text-decoration: none;
-        color: #fff;
-    }
+img {
+	transition: 1s;
+	&:hover {
+		opacity: 0.8;
+		transition: 1s;
+	}
+}
+.btn-style-1 {
+	color: #fff;
+	background-color: $primaria;
+	border-radius: 5px;
+	transition: 0.5ms;
+	font-weight: 300;
+	font-size: 20px;
+	text-transform: capitalize;
+	width: 230px;
+	height: 40px;
+	min-height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	&:hover {
+		opacity: 0.9;
+		transition: 0.5ms;
+		text-decoration: none;
+		color: #fff;
+	}
 }
 
-.btn-style-2{
-    color: $quaternaria;
-    background-color: $secundaria;
-    border-radius: 5px;
-    transition: 0.5ms;
-    font-weight: 300;
-    font-size: 20px;
-    text-transform: capitalize;
-    width: 230px;
-    height: 40px;
-    min-height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    &:hover{
-        opacity: 0.9;
-        transition: 0.5ms;
-        text-decoration: none;
-        color: #000;
-    }
+.btn-style-2 {
+	color: $quaternaria;
+	background-color: $secundaria;
+	border-radius: 5px;
+	transition: 0.5ms;
+	font-weight: 300;
+	font-size: 20px;
+	text-transform: capitalize;
+	width: 230px;
+	height: 40px;
+	min-height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	&:hover {
+		opacity: 0.9;
+		transition: 0.5ms;
+		text-decoration: none;
+		color: #000;
+	}
 }
 
-
-.content-login{
-    .logo-mini-app{
-        width: 15rem;
-    }
+.content-login {
+	.logo-mini-app {
+		width: 15rem;
+	}
 }
-.caixa-principal{
-    width: 35vw;
-    height: 65vh;
-    padding: 1rem;
-    background-color: $terciaria;
-    -webkit-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.46);
--moz-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.46);
-box-shadow: 0px 5px 5px -2px rgba(0,0,0,0.46);
- #form-login{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     width: 100%;
-     input{
-         width: 100%;
-         border-radius: 5px;
-         border: 1px solid #d4d4d4;
-     }
- }
-}
-
-.h1-style{
-    font-size: 22px;
-    color: $quaternaria;
-    font-weight: 300;
+.caixa-principal {
+	width: 35vw;
+	height: 65vh;
+	padding: 1rem;
+	background-color: $terciaria;
+	-webkit-box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.46);
+	-moz-box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.46);
+	box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.46);
+	#form-login {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		input {
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid #d4d4d4;
+		}
+	}
 }
 
-.content-cadastro{
-    .img-camera-cadastro{
-        width: 3.5rem;
-        display: block;
-    margin: auto;
-    }
+.h1-style {
+	font-size: 22px;
+	color: $quaternaria;
+	font-weight: 300;
 }
 
-.bg-dashboard{
-    display: flex;
-    flex-direction: column;    
-    justify-content: space-between;
-    min-height: auto;
-    #header{
-        .caixa-usuario{
-            display: flex;
-            flex-direction: row;    
-            align-items: center;           
-            min-height: auto;
-            span{
-                font-size: 1.5rem;
-                font-weight: 100;
+.content-cadastro {
+	.img-camera-cadastro {
+		width: 3.5rem;
+		display: block;
+		margin: auto;
+	}
+}
+
+.bg-dashboard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: auto;
+	width: 100%;
+	height: 100%;
+	#header {
+		.logo-mini-app {
+			margin-top: 0.5rem;
+			max-width: 13rem;
+		}
+		.caixa-usuario {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			min-height: auto;
+			span {
+				font-size: 1.5rem;
+				font-weight: 100;
+			}
+		}
+	}
+}
+
+.caixa-maior-lista {
+	display: flex;
+	flex-grow: 1;
+	background-color: #fff;
+	padding: 2rem 0;
+	.header {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		padding: 1rem 0;
+		span {
+			font-weight: 400;
+			font-size: 1.7rem;
+		}
+		img {
+			cursor: pointer;
+			align-self: center;
+		}
+	}
+	.body {
+		border: 1px solid $quinaria;
+		border-radius: 5px;
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			li {
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+		}
+		ul > li {
+			padding: 0.5rem 0;
+			border-bottom: 1px solid $quinaria;
+			.linha {
+				display: flex;
+				flex-direction: row;
+                align-items: center;
+                padding: 0 1rem;
+				a {
+					text-decoration: none;
+				}
+				span {
+					margin-right: auto;
+					margin-left: 0.5rem;
+					color: $quaternaria;
+					font-size: 1.2rem;
+				}
+				img {
+					&:last-child {
+						margin-left: 0.5rem;
+					}
+				}
             }
-        }        
-    }   
+            ul{
+                padding-left: 3.5rem;
+                .tarefa{
+                    border-bottom: 1px solid $quinaria;
+                    padding: .5rem 3.5rem .5rem 0;
+                    display: flex;
+                    .form-check{
+                        margin-right: auto;
+                        .form-check-input{
+                            margin-top: 0.45rem;
+                        }
+                        label{
+                            font-size: 1.2rem;
+                        }
+                    }                    
+                }
+                ul{
+                    padding-right: 3.5rem;
+                    li{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: .25rem 0;
+                        border: 0;
+                    }
+                }
+            }
+		}
+	}
+}
+
+.adicionar-tarefa{
+    margin: 1rem 3.5rem;
+    border-radius: 5px;
+    padding: 0.25rem 0.50rem;
+    border: 1px solid $primaria;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input{
+        border: 0;
+        padding: 0.25rem 0.50rem;
+        flex-grow: 1;
+    }
+    button{
+        border: 0;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        width: 1.4rem;
+        height: 1.4rem;       
+    }
 }
