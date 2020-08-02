@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Criar lista - Do it now</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="bg-dashboard content-lista">
+        <!-- header -->
+        <div id="header" class="bg-quaternaria py-4 w-100">
+            <div class="container">
+                <div class="row">                    
+                    <div class="col-md-8">
+                        <img src="./assets//images/marca_mini_app_custom.png" class="logo-mini-app" alt="Do it now" title="Do it now">
+                    </div>
+                    <div class="col-md-2">
+                        <div class="caixa-usuario">
+                            <img src="./assets/images/avatar.png" alt="Usuário 1" title="Usuário 1">
+                            <span class="ml-2 cl-secundaria">Usuário 1</span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header -->
+
+        <!-- criar lista -->
+        <div class="caixa-maior-criar-lista">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <span class="criar mb-2 d-block referencia">Criar lista</span>
+                        <form action="">
+                            <input type="text" placeholder="Digite o nome da lista..." class="input-style-1 w-100 mb-2">
+                            <div class="adicionar-tarefa m-0">
+                                <input type="text" placeholder="Adicionar tarefa">
+                                <button style="background-image: url('./assets/images/botao_adicionar.png');"></button>
+                            </div>
+                            <div class="caixa-resetar-criar">
+                                <button class="btn-style-2" type="reset">Cancelar</button>
+                                <button class="btn-style-1" type="submit">Criar lista</button>
+                            </div>
+                        </form>
+                        <div class="previa-lista">
+                            <div class="body">
+                                <ul>
+                                    <li>
+                                        <div class="linha">
+                                            <a href="">
+                                                <img src="./assets/images/icone_lista.png" title="Abrir lista" alt="Abrir lista">
+                                            </a>
+                                            <span>Lista 1</span>
+                                            <a href="">
+                                                <img src="./assets/images/icone_editar.png" alt="">
+                                            </a>
+                                            <a href="">
+                                                <img src="./assets/images/icone_deletar_lista.png" alt="">
+                                            </a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="tarefa">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="tarefa1">
+                                                        <label class="form-check-label" for="tarefa1">
+                                                            Tarefa 1
+                                                        </label>
+                                                    </div>
+                                                    <a href=""><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                </div>                                               
+                                            </li>
+                                        </ul>
+                                    </li>                              
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- criar lista -->
+
+    </div>
+</body>
+</html>

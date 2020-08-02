@@ -225,3 +225,100 @@ img {
         height: 1.4rem;       
     }
 }
+
+.input-style-1{
+    border-radius: 5px;
+    padding: 0.50rem 1rem;
+    border: 1px solid $primaria;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caixa-maior-criar-lista {
+    display: flex;
+    flex-grow: 1;
+    padding: 2rem 0;
+    span.referencia{
+        font-weight: 400;
+        font-size: 1.7rem;
+    }
+}
+
+.caixa-resetar-criar {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 1.5rem 0;
+    button{
+        margin: 0 .5rem;
+    }
+}
+
+.previa-lista{
+    .body {		
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			li {
+               
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+		}
+		ul > li {
+			padding: 0.5rem 0;
+			border-bottom: 1px solid $quinaria;
+			.linha {
+				display: flex;
+				flex-direction: row;
+                align-items: center;
+                padding: .5rem 1rem;
+                border-bottom: 1px solid $quinaria;
+				a {
+					text-decoration: none;
+				}
+				span {
+					margin-right: auto;
+					margin-left: 0.5rem;
+					color: $quaternaria;
+					font-size: 1.2rem;
+				}
+				img {
+					&:last-child {
+						margin-left: 0.5rem;
+					}
+				}
+            }
+            ul{
+                padding: 0 3.5rem;
+                .tarefa{
+                    border-bottom: 1px solid $quinaria;
+                    padding: .2rem 0;
+                    display: flex;
+                    .form-check{
+                        margin-right: auto;
+                        .form-check-input{
+                            margin-top: 0.45rem;
+                        }
+                        label{
+                            font-size: 1.2rem;
+                        }
+                    }                    
+                }
+                ul{
+                    padding-right: 3.5rem;
+                    li{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: .25rem 0;
+                        border: 0;
+                    }
+                }
+            }
+		}
+	}
+}
