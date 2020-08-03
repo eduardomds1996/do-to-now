@@ -38,25 +38,26 @@
                             <a href="criar-lista.html"><img src="./assets/images/botao_adicionar.png" alt="+" title="+"></a>
                         </div>
                         <div class="body">
-                            <ul>
+                            <ul class="ul-lista">
                                 <li>
                                     <div class="linha">
                                         <a href="">
                                             <img src="./assets/images/icone_lista.png" title="Abrir lista" alt="Abrir lista">
                                         </a>
+                                        <input type="text" class="js_input_nome_lista">
                                         <span>Lista 1</span>
-                                        <a href="">
+                                        <a href="javascript:void(0);" class="js_editar_lista">
                                             <img src="./assets/images/icone_editar.png" alt="">
                                         </a>
-                                        <a href="">
+                                        <a href="javascript:void(0);" class="js_deletar_lista">
                                             <img src="./assets/images/icone_deletar_lista.png" alt="">
                                         </a>
                                     </div>
                                     <div class="adicionar-tarefa">
                                         <input type="text" placeholder="Adicionar tarefa">
-                                        <button style="background-image: url('./assets/images/botao_adicionar.png');"></button>
+                                        <button style="background-image: url('./assets/images/botao_adicionar.png');" class="js_adicionar_tarefa"></button>
                                     </div>
-                                    <ul>
+                                    <ul class="ul-tarefa">
                                         <li>
                                             <div class="tarefa">
                                                 <div class="form-check">
@@ -65,7 +66,7 @@
                                                         Tarefa 1
                                                     </label>
                                                 </div>
-                                                <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                <a href="javascript:void(0);" class="js_deletar_tarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
                                             </div>
                                             <ul class="ul-sub">
                                                 <li>
@@ -94,37 +95,150 @@
                                                         </label>
                                                     </div>
                                                     <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
-                                                </li>                                             
+                                                </li>
                                             </ul>
+                                            <div class="adicionar-tarefa customizacao-adicionar-subtarefa">
+                                                <input type="text" placeholder="Adicionar subtarefa" class="js_input_adicionar_subtarefa">
+                                                <button style="background-image: url('./assets/images/botao_adicionar.png');" class="btn_adicionar_subtarefa"></button>
+                                            </div>
                                         </li>
                                     </ul>
                                 </li>                              
-                            </ul>  
-                            <ul>
+                            </ul> 
+                            <ul class="ul-lista">
                                 <li>
                                     <div class="linha">
                                         <a href="">
                                             <img src="./assets/images/icone_lista.png" title="Abrir lista" alt="Abrir lista">
                                         </a>
+                                        <input type="text" class="js_input_nome_lista">
                                         <span>Lista 2</span>
-                                        <a href="">
+                                        <a href="javascript:void(0);" class="js_editar_lista">
                                             <img src="./assets/images/icone_editar.png" alt="">
                                         </a>
-                                        <a href="">
+                                        <a href="javascript:void(0);" class="js_deletar_lista">
                                             <img src="./assets/images/icone_deletar_lista.png" alt="">
                                         </a>
                                     </div>
                                     <div class="adicionar-tarefa">
                                         <input type="text" placeholder="Adicionar tarefa">
-                                        <button style="background-image: url('./assets/images/botao_adicionar.png');"></button>
+                                        <button style="background-image: url('./assets/images/botao_adicionar.png');" class="js_adicionar_tarefa"></button>
                                     </div>
-                                    <ul>
+                                    <ul class="ul-tarefa">
                                         <li>
-                                            <span>teste</span>
+                                            <div class="tarefa">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="tarefa1">
+                                                    <label class="form-check-label" for="tarefa1">
+                                                        Tarefa 1
+                                                    </label>
+                                                </div>
+                                                <a href="javascript:void(0);" class="js_deletar_tarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                            </div>
+                                            <ul class="ul-sub">
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="subtarefa1">
+                                                        <label class="form-check-label" for="subtarefa1">
+                                                            Subtarefa 1
+                                                        </label>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="subtarefa2">
+                                                        <label class="form-check-label" for="subtarefa2">
+                                                            Subtarefa 2
+                                                        </label>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                </li> 
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="subtarefa3">
+                                                        <label class="form-check-label" for="subtarefa3">
+                                                            Subtarefa 3
+                                                        </label>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                </li>
+                                            </ul>
+                                            <div class="adicionar-tarefa customizacao-adicionar-subtarefa">
+                                                <input type="text" placeholder="Adicionar subtarefa" class="js_input_adicionar_subtarefa">
+                                                <button style="background-image: url('./assets/images/botao_adicionar.png');" class="btn_adicionar_subtarefa"></button>
+                                            </div>
                                         </li>
                                     </ul>
                                 </li>                              
-                            </ul>                           
+                            </ul> 
+                            <ul class="ul-lista">
+                                <li>
+                                    <div class="linha">
+                                        <a href="">
+                                            <img src="./assets/images/icone_lista.png" title="Abrir lista" alt="Abrir lista">
+                                        </a>
+                                        <input type="text" class="js_input_nome_lista">
+                                        <span>Lista 3</span>
+                                        <a href="javascript:void(0);" class="js_editar_lista">
+                                            <img src="./assets/images/icone_editar.png" alt="">
+                                        </a>
+                                        <a href="javascript:void(0);" class="js_deletar_lista">
+                                            <img src="./assets/images/icone_deletar_lista.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="adicionar-tarefa">
+                                        <input type="text" placeholder="Adicionar tarefa">
+                                        <button style="background-image: url('./assets/images/botao_adicionar.png');" class="js_adicionar_tarefa"></button>
+                                    </div>
+                                    <ul class="ul-tarefa">
+                                        <li>
+                                            <div class="tarefa">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="tarefa1">
+                                                    <label class="form-check-label" for="tarefa1">
+                                                        Tarefa 1
+                                                    </label>
+                                                </div>
+                                                <a href="javascript:void(0);" class="js_deletar_tarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                            </div>
+                                            <ul class="ul-sub">
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="subtarefa1">
+                                                        <label class="form-check-label" for="subtarefa1">
+                                                            Subtarefa 1
+                                                        </label>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="subtarefa2">
+                                                        <label class="form-check-label" for="subtarefa2">
+                                                            Subtarefa 2
+                                                        </label>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                </li> 
+                                                <li>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="subtarefa3">
+                                                        <label class="form-check-label" for="subtarefa3">
+                                                            Subtarefa 3
+                                                        </label>
+                                                    </div>
+                                                    <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                </li>
+                                            </ul>
+                                            <div class="adicionar-tarefa customizacao-adicionar-subtarefa">
+                                                <input type="text" placeholder="Adicionar subtarefa" class="js_input_adicionar_subtarefa">
+                                                <button style="background-image: url('./assets/images/botao_adicionar.png');" class="btn_adicionar_subtarefa"></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>                              
+                            </ul>                                                         
                         </div>
                     </div>
                 </div>

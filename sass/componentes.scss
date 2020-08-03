@@ -128,7 +128,7 @@ img {
 		width: 100%;
         justify-content: space-between;
         align-items: center;
-		padding: 1rem 0;
+        padding: 1rem 0;        
 		span {
 			font-weight: 400;
 			font-size: 1.7rem;
@@ -161,7 +161,16 @@ img {
                 padding: 0 1rem;
 				a {
 					text-decoration: none;
-				}
+                }
+                input {
+                    margin-right: auto;
+					margin-left: 0.5rem;
+					color: $quaternaria;
+                    font-size: 1.2rem;
+                    padding: 0 1rem;
+                    display: none;
+                    border: 0;
+                }
 				span {
 					margin-right: auto;
 					margin-left: 0.5rem;
@@ -225,6 +234,10 @@ img {
         width: 1.4rem;
         height: 1.4rem;       
     }
+}
+
+.customizacao-adicionar-subtarefa{
+    margin: 0 3.5rem;    
 }
 
 .input-style-1{
