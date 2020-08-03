@@ -6,6 +6,7 @@
     <title>Listas - Do it now</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="bg-dashboard content-lista">
@@ -64,9 +65,9 @@
                                                         Tarefa 1
                                                     </label>
                                                 </div>
-                                                <a href=""><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
                                             </div>
-                                            <ul>
+                                            <ul class="ul-sub">
                                                 <li>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="subtarefa1">
@@ -74,7 +75,7 @@
                                                             Subtarefa 1
                                                         </label>
                                                     </div>
-                                                    <a href=""><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                    <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
                                                 </li>
                                                 <li>
                                                     <div class="form-check">
@@ -83,7 +84,7 @@
                                                             Subtarefa 2
                                                         </label>
                                                     </div>
-                                                    <a href=""><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                    <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
                                                 </li> 
                                                 <li>
                                                     <div class="form-check">
@@ -92,7 +93,7 @@
                                                             Subtarefa 3
                                                         </label>
                                                     </div>
-                                                    <a href=""><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
+                                                    <a href="javascript:void(0);" class="js_deletar_subtarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
                                                 </li>                                             
                                             </ul>
                                         </li>
@@ -132,5 +133,6 @@
         <!-- lista -->
 
     </div>
+    <script src="./listas.js"></script>
 </body>
 </html>
