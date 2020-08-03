@@ -47,28 +47,26 @@ $('.js_adicionar_tarefa').on('click', function(){
     var  valorNovaTarefa = $(this).prev('input').val();
     var valorNovaTarefaRegex = valorNovaTarefa.replace(/\s/g, '');
     $(this).prev('input').val('');
-    var ulNovaTarefa =  $(this).parents('.body');
+    var ulNovaTarefa =  $(this).parents('li');
     if(valorNovaTarefa != ''){
     ulNovaTarefa.append(`
-        <ul>
+        <ul class="ul-tarefa">
             <li>
-                <div class="linha">
-                    <a href="">
-                        <img src="./assets/images/icone_lista.png" title="Abrir lista" alt="Abrir lista">
-                    </a>
-                    <span>${valorNovaTarefa}</span>
-                    <a href="">
-                        <img src="./assets/images/icone_editar.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="./assets/images/icone_deletar_lista.png" alt="">
-                    </a>
+                <div class="tarefa">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="${valorNovaTarefaRegex}">
+                        <label class="form-check-label" for="${valorNovaTarefaRegex}">
+                            ${valorNovaTarefa}
+                        </label>
+                    </div>
+                    <a href="javascript:void(0);" class="js_deletar_tarefa"><img src="./assets/images/icone_deletar_tarefa-subtarefa.png" alt=""></a>
                 </div>
-                <div class="adicionar-tarefa">
-                    <input type="text" placeholder="Adicionar tarefa">
-                    <button style="background-image: url('./assets/images/botao_adicionar.png');"></button>
-                </div>                
-            </li>                              
+                
+                <div class="adicionar-tarefa customizacao-adicionar-subtarefa">
+                    <input type="text" placeholder="Adicionar subtarefa" class="js_input_adicionar_subtarefa">
+                    <button style="background-image: url('./assets/images/botao_adicionar.png');" class="btn_adicionar_subtarefa"></button>
+                </div>
+            </li>
         </ul>
     `);
     }
